@@ -378,6 +378,22 @@
   ----------------------------------------------------------- */
 
   /* -----------------------------------------------------------
+     FAQ ACCORDION
+  ----------------------------------------------------------- */
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    const btn = item.querySelector('.faq-question');
+    if (!btn) return;
+    btn.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      // Close all
+      faqItems.forEach(i => i.classList.remove('open'));
+      // Open this one if it wasn't open
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  /* -----------------------------------------------------------
      KEYBOARD ACCESSIBILITY — close menus on Escape
   ----------------------------------------------------------- */
   document.addEventListener('keydown', e => {

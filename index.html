@@ -4,10 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Kogan Self Defense — Chicagoland's Premier MMA & Martial Arts Academy. 59 World Champions. Training in Hapkido, Muay Thai, BJJ, Krav Maga & more. Buffalo Grove, IL. Call 847-877-4711.">
-  <meta name="keywords" content="self defense, MMA, martial arts, Hapkido, Muay Thai, BJJ, Krav Maga, Buffalo Grove, Chicago, Kogan">
+  <meta name="keywords" content="self defense, MMA, martial arts, Hapkido, Muay Thai, BJJ, Krav Maga, Buffalo Grove, Chicago, Kogan, Spetsnaz">
   <title>Kogan Self Defense | Chicago's Premier MMA & Martial Arts Academy</title>
 
-  <!-- Schema.org Local Business -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -27,24 +26,44 @@
   }
   </script>
 
-  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- ============================================================
-       LOADER
-  ============================================================ -->
-  <div class="loader" id="loader">
-    <div class="loader__inner">
-      <svg class="loader__logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<!-- ============================================================
+     LOADER
+============================================================ -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <svg class="loader__logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="97" fill="#0a0a0a"/>
+      <circle cx="100" cy="100" r="95" fill="none" stroke="#CC0000" stroke-width="4"/>
+      <circle cx="100" cy="100" r="88" fill="none" stroke="#CC0000" stroke-width="1" opacity="0.5"/>
+      <text x="100" y="52" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="19" font-weight="900" fill="white" letter-spacing="1">SPETSNAZ</text>
+      <text x="100" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="3">USA</text>
+      <polygon points="86,88 100,140 114,88 109,92 100,130 91,92" fill="#CC0000"/>
+      <polygon points="22,80 78,70 82,85 26,95" fill="#CC0000"/>
+      <polygon points="22,80 55,68 58,80 26,90" fill="#CC0000" opacity="0.75"/>
+      <polygon points="178,80 122,70 118,85 174,95" fill="#CC0000"/>
+      <polygon points="178,80 145,68 142,80 174,90" fill="#CC0000" opacity="0.75"/>
+      <text x="100" y="170" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" font-weight="900" fill="white" letter-spacing="1">CRUSHALO</text>
+    </svg>
+    <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
+    <p class="loader__tagline">FORGING WARRIORS SINCE 1990</p>
+  </div>
+</div>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav class="nav" id="nav">
+  <div class="container nav__wrap">
+    <a href="#home" class="nav__brand">
+      <svg class="nav__logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
         <circle cx="100" cy="100" r="97" fill="#0a0a0a"/>
         <circle cx="100" cy="100" r="95" fill="none" stroke="#CC0000" stroke-width="4"/>
         <circle cx="100" cy="100" r="88" fill="none" stroke="#CC0000" stroke-width="1" opacity="0.5"/>
@@ -57,18 +76,1441 @@
         <polygon points="178,80 145,68 142,80 174,90" fill="#CC0000" opacity="0.75"/>
         <text x="100" y="170" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" font-weight="900" fill="white" letter-spacing="1">CRUSHALO</text>
       </svg>
-      <div class="loader__bar-wrap"><div class="loader__bar"></div></div>
-      <p class="loader__tagline">FORGING WARRIORS SINCE 1990</p>
+      <div class="nav__brand-text">
+        <span class="brand-main">KOGAN</span>
+        <span class="brand-sub">SELF DEFENSE</span>
+      </div>
+    </a>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#about"        class="nav__link">About</a></li>
+      <li><a href="#programs"     class="nav__link">Programs</a></li>
+      <li><a href="#kids"         class="nav__link">Kids</a></li>
+      <li><a href="#trainers"     class="nav__link">Trainers</a></li>
+      <li><a href="#pricing"      class="nav__link">Pricing</a></li>
+      <li><a href="#testimonials" class="nav__link">Reviews</a></li>
+      <li><a href="#gallery"      class="nav__link">Gallery</a></li>
+      <li><a href="#faq"          class="nav__link">FAQ</a></li>
+      <li><a href="#contact"      class="nav__link">Contact</a></li>
+    </ul>
+
+    <div class="nav__right">
+      <a href="tel:8478774711" class="nav__phone">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>847-877-4711</span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </div>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
-  <nav class="nav" id="nav">
-    <div class="container nav__wrap">
-      <a href="#home" class="nav__brand">
-        <svg class="nav__logo-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <div class="nav__mobile" id="navMobile">
+    <ul class="nav__mobile-list">
+      <li><a href="#about"        class="nav__mobile-link">About</a></li>
+      <li><a href="#programs"     class="nav__mobile-link">Programs</a></li>
+      <li><a href="#kids"         class="nav__mobile-link">Kids Program</a></li>
+      <li><a href="#trainers"     class="nav__mobile-link">Trainers</a></li>
+      <li><a href="#pricing"      class="nav__mobile-link">Pricing</a></li>
+      <li><a href="#testimonials" class="nav__mobile-link">Reviews</a></li>
+      <li><a href="#gallery"      class="nav__mobile-link">Gallery</a></li>
+      <li><a href="#events"       class="nav__mobile-link">Events</a></li>
+      <li><a href="#faq"          class="nav__mobile-link">FAQ</a></li>
+      <li><a href="#contact"      class="nav__mobile-link">Contact</a></li>
+    </ul>
+    <a href="tel:8478774711" class="btn btn--red mobile-call-btn">
+      <i class="fa-solid fa-phone"></i> Call 847-877-4711
+    </a>
+    <div class="nav__mobile-social">
+      <a href="https://www.tiktok.com/@michael.kogan8"       target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+      <a href="https://www.instagram.com/kogan7497/"          target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.facebook.com/mikhail.kogan"        target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@mikhailkogan8136"     target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     VIDEO: Place your video at images/hero.mp4 (16:9 landscape)
+============================================================ -->
+<section class="hero" id="home">
+  <div class="hero__video-wrap">
+    <video class="hero__video" autoplay muted loop playsinline>
+      <source src="images/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero__video-overlay"></div>
+  </div>
+  <div class="hero__pattern"></div>
+  <div class="hero__glow"></div>
+  <canvas class="hero__particles" id="particleCanvas"></canvas>
+  <div class="hero__bar hero__bar--1"></div>
+  <div class="hero__bar hero__bar--2"></div>
+
+  <div class="container hero__content">
+    <p class="hero__eyebrow">
+      <span class="eyebrow-line"></span>
+      1549 Barclay Blvd, Buffalo Grove, IL &mdash; Serving Chicagoland Since 1990
+      <span class="eyebrow-line"></span>
+    </p>
+    <h1 class="hero__title">
+      <span class="hero__title-top">CHICAGOLAND'S PREMIER</span>
+      <span class="hero__title-mid">SELF DEFENSE</span>
+      <span class="hero__title-accent">&amp; MARTIAL ARTS</span>
+    </h1>
+    <p class="hero__subtitle">
+      For Men, Women, and Kids — Hapkido, Muay Thai, MMA, Kung-Fu,<br>
+      Sambo, Combat Sambo and Self Defense instruction in Chicago, IL and Suburbs.
+    </p>
+    <div class="hero__ctas">
+      <a href="tel:8478774711" class="btn btn--red btn--xl pulse-btn">
+        <i class="fa-solid fa-phone"></i>&nbsp; Call to Enroll
+      </a>
+      <a href="#programs" class="btn btn--outline btn--xl">
+        View Programs &nbsp;<i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+    <div class="hero__trust">
+      <div class="hero__trust-item"><strong>59</strong> World Champions</div>
+      <div class="hero__trust-divider"></div>
+      <div class="hero__trust-item"><strong>900+</strong> Int'l Medals</div>
+      <div class="hero__trust-divider"></div>
+      <div class="hero__trust-item"><strong>35+</strong> Years of Excellence</div>
+    </div>
+  </div>
+
+  <div class="hero__scroll">
+    <span class="hero__scroll-text">SCROLL</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================================
+     STATS BAR
+============================================================ -->
+<div class="stats-bar">
+  <div class="container stats-bar__inner">
+    <div class="stat-item">
+      <div class="stat-num-wrap">
+        <span class="stat-num" data-count="35">0</span><span class="stat-suffix">+</span>
+      </div>
+      <p class="stat-label">Years of Excellence</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num-wrap">
+        <span class="stat-num" data-count="900">0</span><span class="stat-suffix">+</span>
+      </div>
+      <p class="stat-label">International Medals</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num-wrap">
+        <span class="stat-num" data-count="59">0</span>
+      </div>
+      <p class="stat-label">World Champions Produced</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num-wrap">
+        <span class="stat-num" data-count="7">0</span>
+      </div>
+      <p class="stat-label">Elite Disciplines</p>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-num-wrap">
+        <span class="stat-num" data-count="4">0</span>
+      </div>
+      <p class="stat-label">World Champion Coaches</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     FEATURE HIGHLIGHTS
+============================================================ -->
+<section class="features">
+  <div class="container">
+    <div class="features__grid">
+
+      <div class="feature-card reveal" style="--delay:0ms">
+        <div class="feature-card__icon"><i class="fa-solid fa-trophy"></i></div>
+        <div class="feature-card__body">
+          <h3>59 World Champions</h3>
+          <p>In the last 10 years our students have earned over 900 medals in international competitions across Hapkido, BJJ, Sambo, Karate, Kung-Fu, and Kickboxing.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:100ms">
+        <div class="feature-card__icon"><i class="fa-solid fa-users"></i></div>
+        <div class="feature-card__body">
+          <h3>For Men, Women &amp; Kids</h3>
+          <p>Premium Hapkido, Muay Thai, MMA, Kung-Fu, Sambo, Combat Sambo and Self Defense instruction for all ages and skill levels since 1990.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:200ms">
+        <div class="feature-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+        <div class="feature-card__body">
+          <h3>Self-Defense That Transcends</h3>
+          <p>We teach a brand of self-defense that transcends our physical art and includes the self-defense skills of kindness, community and compassion.</p>
+        </div>
+      </div>
+
+      <div class="feature-card reveal" style="--delay:300ms">
+        <div class="feature-card__icon"><i class="fa-solid fa-star"></i></div>
+        <div class="feature-card__body">
+          <h3>Higher Learning &amp; Standards</h3>
+          <p>A complete martial arts system with an emphasis on the body, mind, and soul. An academy of higher learning and standards — a teacher's teacher.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     IMAGE: Replace images/about.jpg (portrait, 4:5 ratio recommended)
+============================================================ -->
+<section class="about" id="about">
+  <div class="container about__grid">
+
+    <div class="about__media reveal">
+      <div class="about__img-wrap">
+        <div class="about__img-frame">
+          <!-- PHOTO: Gym interior, Master Kogan teaching, or action shot -->
+          <img src="images/about.jpg" alt="Master Mikhail Kogan training" class="about__img" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="about__img-placeholder"><i class="fa-solid fa-dumbbell"></i></div>
+        </div>
+        <div class="about__badge">
+          <span class="badge-est">EST.</span>
+          <span class="badge-year">1990</span>
+        </div>
+        <div class="about__deco-line"></div>
+        <div class="about__deco-box"></div>
+      </div>
+    </div>
+
+    <div class="about__content reveal">
+      <div class="section-label">OUR STORY</div>
+      <h2 class="section-title">
+        More Than a Gym.<br>
+        <span class="text-red">A Legacy of Champions.</span>
+      </h2>
+      <p class="about__text">
+        Kogan Self-Defense has provided premium Hapkido, Muay Thai, Mixed Martial Arts (MMA), Kung-Fu,
+        Sambo, Combat Sambo and Self Defense instruction in the Chicago area since 1990, with a lineage
+        spanning Grand Masters and multiple generations. Our specialized curricula for ages 5 through
+        adulthood focus on character development, life skills, and self-defense alongside fitness and
+        confidence-building.
+      </p>
+      <p class="about__text">
+        We are <em>an academy of higher learning and standards</em> — a complete martial arts system
+        with an emphasis on the body, mind, and soul. We demand from our students respect, action,
+        bravery, loyalty, trust, humility, integrity and kindness. We are more than a gym — we are a
+        teacher's teacher.
+      </p>
+      <blockquote class="about__quote">
+        <div class="quote-icon">&ldquo;</div>
+        <p>From Calmness there is Power,<br>From Silence there is Awareness.</p>
+        <cite>&mdash; Grand Master Mikhail Kogan</cite>
+      </blockquote>
+      <div class="about__highlights">
+        <div class="about__highlight"><i class="fa-solid fa-medal"></i><span>Trained Russia's Elite Spetsnaz Military Unit</span></div>
+        <div class="about__highlight"><i class="fa-solid fa-book-open"></i><span>Published Author on Hand-to-Hand Combat</span></div>
+        <div class="about__highlight"><i class="fa-solid fa-trophy"></i><span>59 World Champions Produced in the Last 10 Years</span></div>
+        <div class="about__highlight"><i class="fa-solid fa-globe"></i><span>Bilingual Instruction — English &amp; Russian</span></div>
+      </div>
+      <a href="#programs" class="btn btn--red">Explore Our Programs</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     WHY CHOOSE US
+============================================================ -->
+<section class="why-us">
+  <div class="container">
+    <div class="why-us__grid">
+
+      <div class="why-us__left reveal">
+        <div class="section-label">THE KOGAN DIFFERENCE</div>
+        <h2 class="section-title">Why Thousands Choose <span class="text-red">Kogan Self Defense</span></h2>
+        <p class="why-us__intro">
+          Kogan Self-Defense in Buffalo Grove, IL is one of the Chicago area's most innovative Martial Arts
+          and Self Defense Schools. We teach a brand of self-defense that transcends our physical art and
+          includes the self-defense skills of kindness, community and compassion.
+        </p>
+        <!-- PHOTO: Group training photo or competition celebration -->
+        <div class="why-us__img-wrap">
+          <img src="images/why-us.jpg" alt="Kogan Self Defense students training" onerror="this.style.display='none'">
+          <div class="why-us__img-placeholder"><i class="fa-solid fa-people-group"></i><span>Add group training photo here</span></div>
+        </div>
+      </div>
+
+      <div class="why-us__right reveal" style="--delay:150ms">
+        <ul class="why-list">
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Real world champions as your coaches</strong>
+              <span>Every trainer here has competed and won — internationally. You're learning from people who have been tested under pressure.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Proven competition curriculum</strong>
+              <span>The same system that produced 59 World Champions in 10 years is available to every student — beginner to advanced.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Safe, structured, professional environment</strong>
+              <span>Rigorous but respectful. Our gym culture demands excellence and mutual respect — no ego, no drama, just results.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Practical self-defense — not just sport</strong>
+              <span>Founded by a Spetsnaz military trainer, our curriculum bridges competitive sport and real-world self-protection.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>7 disciplines under one roof</strong>
+              <span>Hapkido, MMA, BJJ, Muay Thai, Krav Maga, Kyokushin, and Shotokan — explore multiple arts and build a complete skill set.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Unlimited training at $150/month</strong>
+              <span>Train every single day across all disciplines for less than $5 per session. Unmatched value in the Chicagoland area.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Programming for every stage of life</strong>
+              <span>Kids 5+ through seniors. We have purpose-built tracks for children, adults, competitors, and those seeking fitness.</span>
+            </div>
+          </li>
+          <li class="why-item">
+            <div class="why-item__check"><i class="fa-solid fa-check"></i></div>
+            <div>
+              <strong>Chicagoland's most decorated academy</strong>
+              <span>35+ years, 900+ international medals. Our reputation was earned one champion at a time.</span>
+            </div>
+          </li>
+        </ul>
+        <a href="tel:8478774711" class="btn btn--red" style="margin-top:2rem">
+          <i class="fa-solid fa-phone"></i> Call Us Today
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROGRAMS
+============================================================ -->
+<section class="programs" id="programs">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">DISCIPLINES</div>
+      <h2 class="section-title">Choose Your <span class="text-red">Path</span></h2>
+      <p class="section-desc">World-class instruction across seven elite combat disciplines — for students of all ages and skill levels.</p>
+    </div>
+
+    <div class="programs__grid">
+
+      <div class="program-card reveal" style="--delay:0ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#0c1a3e 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-hand-back-fist"></i></div>
+          <h3 class="program-card__name">Hapkido</h3>
+          <p class="program-card__desc">Long- and close-range fighting techniques, utilizing jumping kicks and percussive hand strikes as well as pressure point strikes, joint locks, or throws.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-hand-back-fist"></i></div>
+          <h3>Hapkido</h3>
+          <p>Hapkido contains both long- and close-range fighting techniques, utilizing jumping kicks and percussive hand strikes at longer ranges as well as pressure point strikes, joint locks, or throws at closer fighting distances.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:80ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#2a0000 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-person-falling-burst"></i></div>
+          <h3 class="program-card__name">Mixed Martial Arts</h3>
+          <p class="program-card__desc">The complete fighting system — striking, wrestling, grappling, and submissions unified.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 12+ &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-person-falling-burst"></i></div>
+          <h3>Mixed Martial Arts</h3>
+          <p>A seamless blend of striking, clinch work, takedowns, and ground fighting. Train the way champions do — with a complete, no-gaps skill set tested in competition.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:160ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#001a38 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-circle-nodes"></i></div>
+          <h3 class="program-card__name">Brazilian Jiu-Jitsu</h3>
+          <p class="program-card__desc">Ground dominance through leverage — chokes, armbars, and submissions that level the playing field.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+          <h3>Brazilian Jiu-Jitsu</h3>
+          <p>The gentle art that enables a smaller person to defeat a larger attacker. Learn to control the ground, escape bad positions, and finish with precision submissions.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:240ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#1a0028 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <h3 class="program-card__name">Muay Thai</h3>
+          <p class="program-card__desc">A combat sport of Thailand that uses stand-up striking along with various clinching techniques — the art of eight limbs.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 12+ &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <h3>Muay Thai</h3>
+          <p>Muay Thai is a combat sport of Thailand that uses stand-up striking along with various clinching techniques. Known as the "art of eight limbs," it uses the fists, elbows, knees, and shins.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:320ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#001a08 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="program-card__name">Krav Maga</h3>
+          <p class="program-card__desc">The world's leading self-defense system, known for its no-nonsense and realistic approach to helping students live safer and stronger lives.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> Adults &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3>Krav Maga</h3>
+          <p>Krav Maga is the world's leading self-defense system, known for its no-nonsense and realistic approach. It teaches students to live safer and stronger lives using practical, proven techniques.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:400ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#1a0f00 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3 class="program-card__name">Kyokushin Karate</h3>
+          <p class="program-card__desc">Learn these powerful and intricate styles from world-class trainers and guest masters with 5th degree black belts, including masters from Mongolia.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 6+ &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h3>Kyokushin Karate</h3>
+          <p>Learn these powerful and intricate karate styles from world-class trainers and guest masters with 5th degree black belts, including masters from Mongolia with decades of competition experience.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card reveal" style="--delay:480ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#001818 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon"><i class="fa-solid fa-star"></i></div>
+          <h3 class="program-card__name">Shotokan Karate</h3>
+          <p class="program-card__desc">Precision. Kata. Kumite. The traditional Japanese art refined by World Champions.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-star"></i></div>
+          <h3>Shotokan Karate</h3>
+          <p>Train in the classical Japanese karate system with a two-time World Champion and four-time European Champion as your coach. Technical excellence meets competitive fire.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
+        </div>
+      </div>
+
+      <div class="program-card program-card--gold reveal" style="--delay:560ms">
+        <div class="program-card__bg" style="background:linear-gradient(160deg,#1a1000 0%,#0a0a0a 70%)"></div>
+        <div class="program-card__front">
+          <div class="program-card__icon program-card__icon--gold"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3 class="program-card__name">Kids' Training</h3>
+          <p class="program-card__desc">Lessons for kids of all ages in Hapkido, Mixed Martial Arts, and Brazilian Jiu Jitsu. Everyone wants their kids to have confidence, self-discipline and composure.</p>
+          <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 5–15 &bull; All Levels</div>
+        </div>
+        <div class="program-card__hover program-card__hover--gold">
+          <div class="program-card__hover-icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3>Kids' Program</h3>
+          <p>Lessons for kids of all ages in Hapkido, Mixed Martial Arts, and Brazilian Jiu Jitsu. Martial arts encourages physical activity while teaching confidence, self-discipline, and composure during life's challenging moments.</p>
+          <a href="tel:8478774711" class="btn btn--white btn--sm">Enroll Your Child</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     KIDS PROGRAM SPOTLIGHT
+     IMAGE: images/kids-program.jpg (action shot of kids training)
+============================================================ -->
+<section class="kids-spotlight" id="kids">
+  <div class="container">
+    <div class="kids-spotlight__grid">
+
+      <div class="kids-spotlight__media reveal">
+        <!-- PHOTO: Kids actively training, smiling, confident -->
+        <div class="kids-media-frame">
+          <img src="images/kids-program.jpg" alt="Kids martial arts training at Kogan Self Defense" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="kids-media-placeholder"><i class="fa-solid fa-child-reaching"></i><span>Kids training photo</span></div>
+          <div class="kids-age-badge">Ages 5–15</div>
+        </div>
+        <!-- PHOTO: Additional kids photo or competition -->
+        <div class="kids-media-frame kids-media-frame--sm">
+          <img src="images/kids-competition.jpg" alt="Kids competition" onerror="this.parentElement.classList.add('img-missing')">
+          <div class="kids-media-placeholder"><i class="fa-solid fa-trophy"></i><span>Competition photo</span></div>
+        </div>
+      </div>
+
+      <div class="kids-spotlight__content reveal" style="--delay:150ms">
+        <div class="section-label" style="--label-color:#C9A84C">KIDS PROGRAM</div>
+        <h2 class="section-title">
+          Hapkido, MMA &amp; BJJ<br>
+          <span class="text-gold">for Kids of All Ages</span>
+        </h2>
+        <p class="kids-intro">
+          Everyone wants their kids to have confidence, self-discipline and composure during life's
+          challenging moments. Lessons for kids of all ages in Hapkido, Mixed Martial Arts, and
+          Brazilian Jiu Jitsu are available at Kogan Self-Defense Academy — training the body,
+          mind, and soul from age 5 through adulthood.
+        </p>
+
+        <div class="kids-benefits">
+          <div class="kids-benefit">
+            <div class="kids-benefit__icon"><i class="fa-solid fa-brain"></i></div>
+            <div>
+              <strong>Focus &amp; Discipline</strong>
+              <p>Structured routines and clear expectations build the mental habits kids need in school and beyond.</p>
+            </div>
+          </div>
+          <div class="kids-benefit">
+            <div class="kids-benefit__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <strong>Anti-Bullying Skills</strong>
+              <p>Kids learn to set boundaries, assert themselves, and handle conflict with confidence rather than fear.</p>
+            </div>
+          </div>
+          <div class="kids-benefit">
+            <div class="kids-benefit__icon"><i class="fa-solid fa-heart-pulse"></i></div>
+            <div>
+              <strong>Fitness &amp; Coordination</strong>
+              <p>Age-appropriate physical conditioning that keeps kids active, healthy, and energized in a sport they love.</p>
+            </div>
+          </div>
+          <div class="kids-benefit">
+            <div class="kids-benefit__icon"><i class="fa-solid fa-medal"></i></div>
+            <div>
+              <strong>Competition Pathway</strong>
+              <p>For driven students, we offer dedicated competition training and tournament placement at local, national, and international levels.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kids-disciplines">
+          <span>Hapkido</span>
+          <span>Mixed Martial Arts</span>
+          <span>Brazilian Jiu-Jitsu</span>
+        </div>
+
+        <!-- Parent testimonial pull-quote -->
+        <blockquote class="kids-parent-quote">
+          <p>&ldquo;My son enrolled at age 8. He's now 12, competing in tournaments and leading at school. This gym didn't just teach him to fight — it taught him to lead.&rdquo;</p>
+          <cite>&mdash; David K., parent — Arlington Heights</cite>
+        </blockquote>
+
+        <a href="tel:8478774711" class="btn btn--gold pulse-btn-gold">
+          <i class="fa-solid fa-phone"></i> Enroll Your Child — Call Now
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TRAINERS
+     PHOTO SLOTS: images/trainer-kogan.jpg, trainer-yarkulov.jpg,
+                  trainer-karomatov.jpg, trainer-adian.jpg
+============================================================ -->
+<section class="trainers" id="trainers">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">INSTRUCTORS</div>
+      <h2 class="section-title">Train With <span class="text-red">World Champions</span></h2>
+      <p class="section-desc">Our instructors are not just teachers — they are decorated competitors and lifelong masters of their craft.</p>
+    </div>
+
+    <!-- Featured: Founder -->
+    <div class="trainer-featured reveal">
+      <div class="trainer-featured__photo">
+        <!-- PHOTO: images/trainer-kogan.jpg (headshot or action, square crop) -->
+        <div class="trainer-photo" style="--initials:'MK'">
+          <img src="images/trainer-kogan.jpg" alt="Mikhail Kogan — Founder & Grand Master">
+        </div>
+        <div class="trainer-featured__badge">FOUNDER &amp; GRAND MASTER</div>
+      </div>
+      <div class="trainer-featured__info">
+        <h3 class="trainer-name">Mikhail Kogan</h3>
+        <p class="trainer-title text-red">Founder | Grand Master | Published Author</p>
+        <p class="trainer-bio">
+          With over 40 years of studying, practicing, and teaching hand-to-hand combat and martial arts,
+          Grand Master Mikhail Kogan is among the most credentialed martial artists in North America.
+          He personally trained Russia's elite <strong>Spetsnaz special forces</strong> in hand-to-hand combat,
+          authored a published work on combat methodology, and founded the <strong>Spetsnaz USA DART system</strong>
+          — now practiced by thousands worldwide. He speaks both English and Russian and brings the full depth
+          of his four decades of mastery to every session.
+        </p>
+        <div class="trainer-ranks">
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master — Hapkido &amp; GHA State Director</div>
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master — WUCAA Combat Free Fight</div>
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master &amp; Founder — Spetsnaz USA DART</div>
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> 6th Degree Black Belt — Combat Kung Fu &amp; Crushalo</div>
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Black Belt — Judo &nbsp;|&nbsp; U.S.S.R. Master of Sport — Combat Sambo</div>
+          <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Master Instructor — Crushalo &amp; Karate-do &nbsp;|&nbsp; Certified Kickboxing Trainer</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grid Trainers -->
+    <div class="trainers-grid">
+
+      <div class="trainer-card reveal" style="--delay:0ms">
+        <!-- PHOTO: images/trainer-yarkulov.jpg -->
+        <div class="trainer-photo" style="--initials:'SY'">
+          <img src="images/trainer-yarkulov.jpg" alt="Shukhrat Yarkulov">
+        </div>
+        <div class="trainer-card__info">
+          <h3 class="trainer-name">Shukhrat Yarkulov</h3>
+          <p class="trainer-title text-red">Muay Thai &amp; Boxing Master</p>
+          <p class="trainer-bio">President of the Uzbekistan National Federation in Muay Thai and a Master of Sport in Boxing with numerous national and international medals. Coach Yarkulov's students have ascended to become World Champions in Muay Thai, Kickboxing, MMA, and the UFC — a testament to his elite-level coaching methods.</p>
+          <div class="trainer-tags">
+            <span class="trainer-tag">Muay Thai</span>
+            <span class="trainer-tag">Boxing</span>
+            <span class="trainer-tag">MMA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainer-card reveal" style="--delay:120ms">
+        <!-- PHOTO: images/trainer-karomatov.jpg -->
+        <div class="trainer-photo" style="--initials:'AK'">
+          <img src="images/trainer-karomatov.jpg" alt="Avazhon Karomatov">
+        </div>
+        <div class="trainer-card__info">
+          <h3 class="trainer-name">Avazhon Karomatov</h3>
+          <p class="trainer-title text-red">World Champion — Muay Thai</p>
+          <p class="trainer-bio">A decorated World Champion in Muay Thai with multiple national and international medals in Kickboxing. Several of Coach Karomatov's students have gone on to become World Champions in Muay Thai, Kickboxing, and the UFC — proof of his ability to develop fighters from the ground up to elite levels.</p>
+          <div class="trainer-tags">
+            <span class="trainer-tag">Muay Thai</span>
+            <span class="trainer-tag">Kickboxing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="trainer-card reveal" style="--delay:240ms">
+        <!-- PHOTO: images/trainer-adian.jpg -->
+        <div class="trainer-photo" style="--initials:'JA'">
+          <img src="images/trainer-adian.jpg" alt="Jey Adian">
+        </div>
+        <div class="trainer-card__info">
+          <h3 class="trainer-name">Jey Adian</h3>
+          <p class="trainer-title text-red">2× World Champion — Shotokan &amp; Kickboxing</p>
+          <p class="trainer-bio">Two-time World Champion in Shotokan Karate, World Champion in Kickboxing (WAKO), and four-time European Champion. Coach Adian brings obsessive technical precision and competitive fire to every class, with a burning passion for seeing every student qualify for World Championships.</p>
+          <div class="trainer-tags">
+            <span class="trainer-tag">Shotokan</span>
+            <span class="trainer-tag">Kickboxing</span>
+            <span class="trainer-tag">Kata</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CHAMPIONS BANNER
+============================================================ -->
+<div class="champions-banner">
+  <div class="champ-banner__bg-pattern"></div>
+  <div class="container champ-banner__inner reveal">
+    <div class="champ-banner__left">
+      <div class="champ-num">59</div>
+      <div class="champ-label">World Champions<br><span>In The Last 10 Years</span></div>
+    </div>
+    <div class="champ-banner__divider"></div>
+    <div class="champ-banner__right">
+      <p class="champ-desc">Our students have earned gold on the world stage in:</p>
+      <div class="champ-arts">
+        <span>Hapkido</span><span>Brazilian Jiu-Jitsu</span><span>Combat Sambo</span>
+        <span>Karate</span><span>Kung-Fu</span><span>Kickboxing</span>
+      </div>
+      <a href="tel:8478774711" class="btn btn--outline-white">Join the Legacy</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     HOW TO START
+============================================================ -->
+<section class="how-to-start">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">GET STARTED</div>
+      <h2 class="section-title">Your Journey Begins <span class="text-red">in 3 Steps</span></h2>
+      <p class="section-desc">No experience needed. No long-term commitment required. Just call, come in, and train.</p>
+    </div>
+    <div class="steps-grid">
+
+      <div class="step-card reveal" style="--delay:0ms">
+        <div class="step-num">01</div>
+        <div class="step-icon"><i class="fa-solid fa-phone-volume"></i></div>
+        <h3 class="step-title">Call or Visit</h3>
+        <p class="step-desc">Call us at <a href="tel:8478774711" class="step-link">847-877-4711</a> or stop by
+          1549 Barclay Blvd, Buffalo Grove. Speak directly with Master Kogan or our staff about your goals, schedule,
+          and the right program for you.</p>
+        <div class="step-cta">
+          <a href="tel:8478774711" class="btn btn--outline-red btn--sm">Call Now</a>
+        </div>
+      </div>
+
+      <div class="step-card reveal" style="--delay:150ms">
+        <div class="step-num">02</div>
+        <div class="step-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3 class="step-title">Observe or Jump In</h3>
+        <p class="step-desc">Come watch a class or dive right in — we welcome visitors. No special gear needed for
+          your first visit. Our instructors will make sure you feel comfortable and know exactly what to expect
+          from your first session.</p>
+        <div class="step-cta">
+          <a href="#schedule" class="btn btn--outline-red btn--sm">View Schedule</a>
+        </div>
+      </div>
+
+      <div class="step-card reveal" style="--delay:300ms">
+        <div class="step-num">03</div>
+        <div class="step-icon"><i class="fa-solid fa-fire"></i></div>
+        <h3 class="step-title">Begin Your Journey</h3>
+        <p class="step-desc">Choose your plan — drop in at $25/session or go unlimited at $150/month. No hidden fees,
+          no long contracts. Just elite training with world-champion coaches at a price that makes daily practice
+          genuinely achievable.</p>
+        <div class="step-cta">
+          <a href="#pricing" class="btn btn--red btn--sm">See Pricing</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PRICING
+============================================================ -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">INVESTMENT</div>
+      <h2 class="section-title">Simple, <span class="text-red">Honest Pricing</span></h2>
+      <p class="section-desc">No hidden fees. No long-term contracts required. Just elite training at a fair price.</p>
+    </div>
+
+    <div class="pricing__grid">
+
+      <div class="price-card reveal">
+        <div class="price-card__header">
+          <div class="price-card__icon"><i class="fa-solid fa-ticket"></i></div>
+          <h3 class="price-card__name">Drop-In Session</h3>
+          <p class="price-card__tagline">Train on your schedule</p>
+        </div>
+        <div class="price-card__amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">25</span>
+          <span class="price-per">per lesson</span>
+        </div>
+        <ul class="price-card__features">
+          <li><i class="fa-solid fa-check"></i> Access to any single class</li>
+          <li><i class="fa-solid fa-check"></i> All 7 disciplines available</li>
+          <li><i class="fa-solid fa-check"></i> All skill levels welcome</li>
+          <li><i class="fa-solid fa-check"></i> No long-term commitment</li>
+          <li><i class="fa-solid fa-check"></i> Kids &amp; adult programs</li>
+          <li class="unavail"><i class="fa-solid fa-xmark"></i> Unlimited attendance</li>
+        </ul>
+        <a href="tel:8478774711" class="btn btn--outline-red btn--full">Call to Book a Session</a>
+      </div>
+
+      <div class="price-card price-card--featured reveal" style="--delay:150ms">
+        <div class="price-card__badge">BEST VALUE</div>
+        <div class="price-card__header">
+          <div class="price-card__icon"><i class="fa-solid fa-infinity"></i></div>
+          <h3 class="price-card__name">Monthly Unlimited</h3>
+          <p class="price-card__tagline">Train every single day</p>
+        </div>
+        <div class="price-card__amount">
+          <span class="price-dollar">$</span>
+          <span class="price-num">150</span>
+          <span class="price-per">per month</span>
+        </div>
+        <ul class="price-card__features">
+          <li><i class="fa-solid fa-check"></i> Unlimited daily classes</li>
+          <li><i class="fa-solid fa-check"></i> All 7 disciplines included</li>
+          <li><i class="fa-solid fa-check"></i> Kids &amp; adult programs</li>
+          <li><i class="fa-solid fa-check"></i> Open mat access</li>
+          <li><i class="fa-solid fa-check"></i> Competition training</li>
+          <li><i class="fa-solid fa-check"></i> Under $5 per session</li>
+        </ul>
+        <a href="tel:8478774711" class="btn btn--red btn--full pulse-btn">Call to Enroll Today</a>
+        <p class="price-card__note">Only $5/day for unlimited training</p>
+      </div>
+
+    </div>
+
+    <div class="pricing__cta reveal">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span>Questions about programs or pricing? Call us directly: <a href="tel:8478774711">847-877-4711</a></span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     VIDEO SHOWCASE
+     REPLACE: Add real YouTube video IDs below where indicated
+============================================================ -->
+<section class="videos" id="videos">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">WATCH US TRAIN</div>
+      <h2 class="section-title">See It for <span class="text-red">Yourself</span></h2>
+      <p class="section-desc">Hundreds of training videos, competition highlights, and technique breakdowns on our YouTube channel.</p>
+    </div>
+
+    <div class="videos__grid">
+
+      <!-- VIDEO CARD 1
+           To embed a real video: replace the placeholder div below with:
+           <iframe src="https://www.youtube.com/embed/VIDEO_ID_HERE" ...></iframe>
+      -->
+      <div class="video-card reveal" style="--delay:0ms">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#1a0000,#2a0808)">
+          <!-- PHOTO/THUMBNAIL: images/video-thumb-1.jpg -->
+          <img src="images/video-thumb-1.jpg" alt="Training video 1" onerror="this.style.display='none'">
+          <div class="video-thumb__play"><i class="fa-solid fa-play"></i></div>
+          <div class="video-thumb__label">Training Highlights</div>
+        </div>
+        <div class="video-card__info">
+          <h4>Competition Training Session</h4>
+          <p>Watch our students prepare for international competition under Master Kogan's instruction.</p>
+          <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="video-card__link">
+            Watch on YouTube <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card reveal" style="--delay:120ms">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#001a0a,#001208)">
+          <img src="images/video-thumb-2.jpg" alt="Training video 2" onerror="this.style.display='none'">
+          <div class="video-thumb__play"><i class="fa-solid fa-play"></i></div>
+          <div class="video-thumb__label">Technique Breakdown</div>
+        </div>
+        <div class="video-card__info">
+          <h4>Hapkido Techniques with Master Kogan</h4>
+          <p>Step-by-step instruction of foundational Hapkido techniques from a Grand Master with 40+ years of experience.</p>
+          <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="video-card__link">
+            Watch on YouTube <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="video-card reveal" style="--delay:240ms">
+        <div class="video-thumb" style="background:linear-gradient(135deg,#0a0020,#14002a)">
+          <img src="images/video-thumb-3.jpg" alt="Training video 3" onerror="this.style.display='none'">
+          <div class="video-thumb__play"><i class="fa-solid fa-play"></i></div>
+          <div class="video-thumb__label">Competition Day</div>
+        </div>
+        <div class="video-card__info">
+          <h4>World Championship Performance</h4>
+          <p>Follow our students to the world stage — tournament day footage from our champions in competition.</p>
+          <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="video-card__link">
+            Watch on YouTube <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="videos__channel reveal">
+      <div class="videos__channel-info">
+        <i class="fa-brands fa-youtube videos__yt-icon"></i>
+        <div>
+          <strong>@mikhailkogan8136</strong>
+          <span>Subscribe for training videos, technique breakdowns &amp; competition footage</span>
+        </div>
+      </div>
+      <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="btn btn--red">
+        <i class="fa-brands fa-youtube"></i> Subscribe on YouTube
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+============================================================ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">REVIEWS</div>
+      <h2 class="section-title">What Our <span class="text-red">Warriors Say</span></h2>
+      <p class="section-desc">Real results from real students — athletes, parents, professionals, and first-timers.</p>
+    </div>
+
+    <div class="testi-track-wrap">
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">I was skeptical at first, but Master Kogan's methods are unlike anything I've ever experienced. Within three months I felt truly confident for the first time in my life. This place didn't just teach me to defend myself — it changed who I am.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">S</div>
+            <div><strong>Sarah M.</strong><span>Buffalo Grove, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">My son enrolled in the kids' program at age 8. He's now 12, competing at tournaments and leading in school. This gym didn't just teach him to fight — it taught him to lead. The instructors genuinely care about every kid here.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">D</div>
+            <div><strong>David K.</strong><span>Arlington Heights, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">As a woman training alone, I wanted practical self-defense I could actually use. The Krav Maga class gave me exactly that. The instructors are world champions who break everything down to real-world application. I feel genuinely empowered.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">J</div>
+            <div><strong>Jessica T.</strong><span>Lincolnshire, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">I've trained at six different gyms across the Chicago area. Kogan Self Defense is in a completely different league. The trainers are actual world champions — not just certified instructors. The depth of knowledge here is unreal. Best gym in Illinois.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">M</div>
+            <div><strong>Mike R.</strong><span>Vernon Hills, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">After my kids joined, I started adult classes and I'm completely hooked. $150/month for unlimited classes is the best deal in fitness, period. The community here is incredible — supportive, motivating, and genuinely like a second family.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">A</div>
+            <div><strong>Amanda P.</strong><span>Deerfield, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">I've been doing Muay Thai for 8 years at various gyms. The coaching here from Shukhrat is on another level — he trained champions. My footwork, timing, and power improved more in 3 months here than in years elsewhere.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">R</div>
+            <div><strong>Ryan B.</strong><span>Wheeling, IL</span></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="testi-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="testi-quote">&ldquo;</div>
+          <p class="testi-text">My daughter was shy and struggled with confidence. Six months into the kids' program, she's a different person — assertive, proud, and driven. Watching her compete for the first time was the proudest moment of my life as a parent.</p>
+          <div class="testi-author">
+            <div class="testi-avatar">L</div>
+            <div><strong>Linda H.</strong><span>Gurnee, IL</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="testi-controls">
+      <button class="testi-btn" id="testiPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="testi-dots" id="testiDots"></div>
+      <button class="testi-btn" id="testiNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     GALLERY
+     IMAGES: Drop files into images/ named gallery-01.jpg through gallery-12.jpg
+============================================================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">GALLERY</div>
+      <h2 class="section-title">Inside the <span class="text-red">Academy</span></h2>
+      <p class="section-desc">A glimpse into our training environment, competition victories, and champion-producing culture.</p>
+    </div>
+
+    <div class="gallery__grid">
+      <div class="gallery-item gallery-item--wide reveal" style="--delay:0ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0000,#2a0505)">
+          <img src="images/gallery-01.jpg" alt="Training session" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-dumbbell"></i><span>Training</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:80ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#0a1520,#0d1a2a)">
+          <img src="images/gallery-02.jpg" alt="Competition" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-trophy"></i><span>Competition</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--tall reveal" style="--delay:160ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0028,#20002a)">
+          <img src="images/gallery-03.jpg" alt="BJJ rolling" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-circle-nodes"></i><span>BJJ</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:240ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#0a1a00,#0d2006)">
+          <img src="images/gallery-04.jpg" alt="Kids class" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-child-reaching"></i><span>Kids Class</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:320ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0a00,#2a1000)">
+          <img src="images/gallery-05.jpg" alt="Muay Thai training" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-fire-flame-curved"></i><span>Muay Thai</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--wide reveal" style="--delay:400ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#001818,#001a20)">
+          <img src="images/gallery-06.jpg" alt="Championship medals" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-medal"></i><span>Champions</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:480ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a1000,#20160a)">
+          <img src="images/gallery-07.jpg" alt="Hapkido demonstration" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-hand-back-fist"></i><span>Hapkido</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:560ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#18001a,#200025)">
+          <img src="images/gallery-08.jpg" alt="Krav Maga" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-shield-halved"></i><span>Krav Maga</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--wide reveal" style="--delay:640ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#001208,#001a0c)">
+          <img src="images/gallery-09.jpg" alt="Team photo" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-people-group"></i><span>Our Team</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:720ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0000,#200000)">
+          <img src="images/gallery-10.jpg" alt="Sparring" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-bolt"></i><span>Sparring</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:800ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#000f1a,#001525)">
+          <img src="images/gallery-11.jpg" alt="Belt ceremony" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-award"></i><span>Belt Ceremony</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+      <div class="gallery-item reveal" style="--delay:880ms">
+        <div class="gallery-item__inner" style="background:linear-gradient(135deg,#0a1500,#0d1c00)">
+          <img src="images/gallery-12.jpg" alt="Outdoor training" loading="lazy">
+          <div class="gallery-placeholder"><i class="fa-solid fa-sun"></i><span>Outdoor Training</span></div>
+          <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery__social reveal">
+      <p>Follow us for daily training content</p>
+      <div class="social-links">
+        <a href="https://www.tiktok.com/@michael.kogan8"      target="_blank" rel="noopener" class="social-link social-link--tiktok"><i class="fa-brands fa-tiktok"></i><span>@michael.kogan8</span></a>
+        <a href="https://www.instagram.com/kogan7497/"         target="_blank" rel="noopener" class="social-link social-link--instagram"><i class="fa-brands fa-instagram"></i><span>@kogan7497</span></a>
+        <a href="https://www.youtube.com/@mikhailkogan8136"    target="_blank" rel="noopener" class="social-link social-link--youtube"><i class="fa-brands fa-youtube"></i><span>@mikhailkogan8136</span></a>
+        <a href="https://www.facebook.com/mikhail.kogan"       target="_blank" rel="noopener" class="social-link social-link--facebook"><i class="fa-brands fa-facebook-f"></i><span>Mikhail Kogan</span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+  </div>
+</section>
+
+<!-- ============================================================
+     SCHEDULE
+============================================================ -->
+<section class="schedule" id="schedule">
+  <div class="schedule__bg-pattern"></div>
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">SCHEDULE</div>
+      <h2 class="section-title">Train <span class="text-white">Every Day</span></h2>
+      <p class="section-desc" style="color:rgba(255,255,255,0.7)">Classes run morning, afternoon, and evening — 6 days a week. Contact us for exact times.</p>
+    </div>
+
+    <div class="schedule__grid reveal">
+      <div class="schedule-day">
+        <div class="day-name">MON</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Afternoon</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Muay Thai</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">BJJ / Hapkido</span></div>
+        </div>
+      </div>
+      <div class="schedule-day">
+        <div class="day-name">TUE</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Afternoon</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Krav Maga</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Open Mat</span></div>
+        </div>
+      </div>
+      <div class="schedule-day">
+        <div class="day-name">WED</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Afternoon</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Hapkido</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">MMA</span></div>
+        </div>
+      </div>
+      <div class="schedule-day">
+        <div class="day-name">THU</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Afternoon</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Combat Sambo</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Karate</span></div>
+        </div>
+      </div>
+      <div class="schedule-day">
+        <div class="day-name">FRI</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Afternoon</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">Muay Thai</span></div>
+          <div class="day-class"><span class="class-time">Evening</span><span class="class-name">BJJ</span></div>
+        </div>
+      </div>
+      <div class="schedule-day schedule-day--highlight">
+        <div class="day-name">SAT</div>
+        <div class="day-classes">
+          <div class="day-class"><span class="class-time">Morning</span><span class="class-name">Kids' Programs</span></div>
+          <div class="day-class"><span class="class-time">Morning</span><span class="class-name">Adult Mixed</span></div>
+          <div class="day-class"><span class="class-time">Midday</span><span class="class-name">Competition Prep</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="schedule__note reveal">
+      <i class="fa-solid fa-circle-info"></i>
+      <span>Contact us for exact class times and current availability. Schedule may vary by season.</span>
+      <a href="tel:8478774711" class="btn btn--outline-white btn--sm">Call for Current Schedule</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EVENTS / COMPETITIONS
+============================================================ -->
+<section class="events" id="events">
+  <div class="container">
+    <div class="section-header reveal">
+      <div class="section-label">COMPETITIONS &amp; EVENTS</div>
+      <h2 class="section-title">Upcoming <span class="text-red">Events</span></h2>
+      <p class="section-desc">From local tournaments to international championships — our students compete at every level.</p>
+    </div>
+
+    <div class="events__grid">
+
+      <div class="event-card reveal" style="--delay:0ms">
+        <div class="event-card__date">
+          <span class="event-month">TBD</span>
+          <span class="event-day">2025</span>
+        </div>
+        <div class="event-card__body">
+          <div class="event-type-badge">Tournament</div>
+          <h3 class="event-name">Annual Hapkido Championship</h3>
+          <p class="event-desc">Our flagship annual tournament open to all belt levels. Kids and adults compete in forms and sparring. A highlight of our competitive year.</p>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Buffalo Grove, IL</span>
+            <span><i class="fa-solid fa-users"></i> All Ages &amp; Levels</span>
+          </div>
+        </div>
+        <a href="tel:8478774711" class="btn btn--outline-red btn--sm event-card__cta">Call for Details</a>
+      </div>
+
+      <div class="event-card reveal" style="--delay:120ms">
+        <div class="event-card__date">
+          <span class="event-month">TBD</span>
+          <span class="event-day">2025</span>
+        </div>
+        <div class="event-card__body">
+          <div class="event-type-badge event-type-badge--seminar">Seminar</div>
+          <h3 class="event-name">Guest Masters Seminar</h3>
+          <p class="event-desc">Special training session featuring guest masters — including 5th degree black belt instructors from international programs. Open to all students.</p>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-location-dot"></i> Kogan Self Defense, Buffalo Grove</span>
+            <span><i class="fa-solid fa-users"></i> All Levels Welcome</span>
+          </div>
+        </div>
+        <a href="tel:8478774711" class="btn btn--outline-red btn--sm event-card__cta">Call for Details</a>
+      </div>
+
+      <div class="event-card reveal" style="--delay:240ms">
+        <div class="event-card__date">
+          <span class="event-month">TBD</span>
+          <span class="event-day">2025</span>
+        </div>
+        <div class="event-card__body">
+          <div class="event-type-badge event-type-badge--competition">International</div>
+          <h3 class="event-name">Youth World Championship Qualifier</h3>
+          <p class="event-desc">Regional qualifying competition for the World Championships. Students from our youth program who meet criteria can represent Kogan Self Defense on the world stage.</p>
+          <div class="event-meta">
+            <span><i class="fa-solid fa-location-dot"></i> TBD — Chicagoland Area</span>
+            <span><i class="fa-solid fa-users"></i> Youth Competitors</span>
+          </div>
+        </div>
+        <a href="tel:8478774711" class="btn btn--outline-red btn--sm event-card__cta">Call for Details</a>
+      </div>
+
+    </div>
+
+    <div class="events__cta reveal">
+      <i class="fa-solid fa-calendar-plus"></i>
+      <span>Want to compete? Call us to learn about upcoming tournament registration.</span>
+      <a href="tel:8478774711" class="btn btn--red btn--sm">Call 847-877-4711</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FAQ
+============================================================ -->
+<section class="faq" id="faq">
+  <div class="container faq__layout">
+
+    <div class="faq__header reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common <span class="text-red">Questions</span></h2>
+      <p class="faq__sub">Can't find your answer? Call us at <a href="tel:8478774711">847-877-4711</a> and we'll be happy to help.</p>
+    </div>
+
+    <div class="faq__list reveal" style="--delay:100ms">
+
+      <div class="faq-item open">
+        <button class="faq-question">
+          <span>Do I need prior experience to join?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely not. We welcome complete beginners across all programs. Our instructors are experienced at meeting students at their current level — whether you've never thrown a punch or you're a seasoned competitor. Every champion here started as a beginner.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What age can my child start?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>We accept children as young as 5 years old in our Kids' Program. Classes are structured by age group to ensure the instruction is age-appropriate, safe, and fun. Many of our youngest students go on to compete and win at national and international levels.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What is included in the $150/month membership?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>The monthly membership gives you unlimited access to all classes across all 7 disciplines — every single day we're open. That includes kids' programs, adult classes, open mat sessions, and competition training. No caps, no class limits, no extra fees. At $150/month you can train every day for under $5 per session.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What should I wear to my first class?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Comfortable athletic clothing is all you need for your first visit — shorts and a t-shirt work perfectly. As you continue training, you'll want to invest in a gi (uniform) for certain disciplines. Our staff will guide you on the right equipment as you get started. Don't let gear stop you from showing up.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I train in multiple disciplines?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — and we encourage it. With the monthly unlimited plan, you can cross-train in as many disciplines as you like. Many of our most accomplished students train in 2–3 arts simultaneously. Hapkido and BJJ complement each other beautifully, as do Muay Thai and MMA. Our coaches will help you build a well-rounded training plan.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you offer competition training?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Yes — this is one of our greatest strengths. We have produced 59 World Champions in the last 10 years. Competition training is integrated into our programs and we host dedicated competition prep sessions on Saturdays. Whether you want to compete locally or internationally, our coaches know exactly how to get you there.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is the training safe for non-competitive students?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely. The vast majority of our students train purely for fitness, self-defense skills, and personal growth — with no intention of ever competing. Our instructors scale intensity to each student. Safety, technique, and mutual respect are the foundation of everything we do.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How do I enroll?</span>
+          <i class="fa-solid fa-chevron-down faq-icon"></i>
+        </button>
+        <div class="faq-answer">
+          <p>The easiest way is to call us at <a href="tel:8478774711">847-877-4711</a> and speak with our team. You can also stop by the gym at 1549 Barclay Blvd, Buffalo Grove, IL 60089. We'll talk through your goals, show you the facility, and get you signed up for the program that's the best fit.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+============================================================ -->
+<section class="contact" id="contact">
+  <div class="container contact__grid">
+
+    <div class="contact__info reveal">
+      <div class="section-label">GET IN TOUCH</div>
+      <h2 class="section-title">Start Your <span class="text-red">Journey Today</span></h2>
+      <p class="contact__intro">Ready to transform your life? Call us, stop by, or follow us on social media. We welcome students of all ages and experience levels — no experience necessary.</p>
+
+      <div class="contact__details">
+        <a href="tel:8478774711" class="contact-item contact-item--link">
+          <div class="contact-item__icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <div><strong>Call Us</strong><span>847-877-4711</span></div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><strong>Location</strong><span>1549 Barclay Blvd, Buffalo Grove, IL 60089</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fa-solid fa-clock"></i></div>
+          <div><strong>Hours</strong><span>Mon–Fri: Afternoon &amp; Evening classes<br>Saturday: Morning &amp; Midday classes</span></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__icon"><i class="fa-solid fa-globe"></i></div>
+          <div><strong>Website</strong><span><a href="https://koganselfdefense.com" target="_blank" rel="noopener" style="color:var(--red)">koganselfdefense.com</a></span></div>
+        </div>
+      </div>
+
+      <div class="contact__social">
+        <p class="contact__social-label">Follow &amp; Train With Us</p>
+        <div class="contact-socials">
+          <a href="https://www.tiktok.com/@michael.kogan8"   target="_blank" rel="noopener" class="csocial csocial--tiktok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/kogan7497/"      target="_blank" rel="noopener" class="csocial csocial--instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="csocial csocial--youtube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/mikhail.kogan"    target="_blank" rel="noopener" class="csocial csocial--facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact__map reveal">
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.6591!2d-87.9614!3d42.1731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb9e43b6f2b2b%3A0x4e2e2e2e2e2e2e2e!2s1549%20Barclay%20Blvd%2C%20Buffalo%20Grove%2C%20IL%2060089!5e0!3m2!1sen!2sus!4v1620000000000"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Kogan Self Defense Location">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com/?q=1549+Barclay+Blvd+Buffalo+Grove+IL+60089" target="_blank" rel="noopener" class="btn btn--red map-directions-btn">
+        <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="footer">
+  <div class="footer__top-line"></div>
+  <div class="container">
+    <div class="footer__grid">
+
+      <div class="footer__brand">
+        <svg class="footer__logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
           <circle cx="100" cy="100" r="97" fill="#0a0a0a"/>
           <circle cx="100" cy="100" r="95" fill="none" stroke="#CC0000" stroke-width="4"/>
           <circle cx="100" cy="100" r="88" fill="none" stroke="#CC0000" stroke-width="1" opacity="0.5"/>
@@ -81,1046 +1523,87 @@
           <polygon points="178,80 145,68 142,80 174,90" fill="#CC0000" opacity="0.75"/>
           <text x="100" y="170" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" font-weight="900" fill="white" letter-spacing="1">CRUSHALO</text>
         </svg>
-        <div class="nav__brand-text">
-          <span class="brand-main">KOGAN</span>
-          <span class="brand-sub">SELF DEFENSE</span>
+        <div class="footer__brand-text">
+          <span class="footer-brand-main">KOGAN SELF DEFENSE</span>
+          <span class="footer-brand-sub">Forging Warriors Since 1990</span>
         </div>
-      </a>
-
-      <ul class="nav__menu" id="navMenu">
-        <li><a href="#about"        class="nav__link">About</a></li>
-        <li><a href="#programs"     class="nav__link">Programs</a></li>
-        <li><a href="#trainers"     class="nav__link">Trainers</a></li>
-        <li><a href="#pricing"      class="nav__link">Pricing</a></li>
-        <li><a href="#testimonials" class="nav__link">Reviews</a></li>
-        <li><a href="#gallery"      class="nav__link">Gallery</a></li>
-        <li><a href="#contact"      class="nav__link">Contact</a></li>
-      </ul>
-
-      <div class="nav__right">
-        <a href="tel:8478774711" class="nav__phone">
-          <i class="fa-solid fa-phone-volume"></i>
-          <span>847-877-4711</span>
-        </a>
-        <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
+        <p class="footer__tagline">"From Calmness there is Power,<br>From Silence there is Awareness."</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@michael.kogan8"   target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/kogan7497/"      target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://www.facebook.com/mikhail.kogan"    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        </div>
       </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#why-us">Why Choose Us</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#kids">Kids Program</a></li>
+          <li><a href="#trainers">Trainers</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Disciplines</h4>
+        <ul class="footer__links">
+          <li><a href="#programs">Hapkido</a></li>
+          <li><a href="#programs">Mixed Martial Arts</a></li>
+          <li><a href="#programs">Brazilian Jiu-Jitsu</a></li>
+          <li><a href="#programs">Muay Thai</a></li>
+          <li><a href="#programs">Krav Maga</a></li>
+          <li><a href="#programs">Kyokushin Karate</a></li>
+          <li><a href="#programs">Shotokan Karate</a></li>
+          <li><a href="#kids">Kids' Program</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4 class="footer__col-title">Contact</h4>
+        <ul class="footer__contact-list">
+          <li><i class="fa-solid fa-phone"></i><a href="tel:8478774711">847-877-4711</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><span>1549 Barclay Blvd<br>Buffalo Grove, IL 60089</span></li>
+          <li><i class="fa-solid fa-globe"></i><a href="https://koganselfdefense.com" target="_blank" rel="noopener">koganselfdefense.com</a></li>
+        </ul>
+        <div style="margin-top:1.5rem">
+          <h4 class="footer__col-title">Hours</h4>
+          <ul class="footer__links">
+            <li style="color:var(--text-subtle);font-size:0.88rem">Mon–Fri: Afternoons &amp; Evenings</li>
+            <li style="color:var(--text-subtle);font-size:0.88rem">Saturday: Mornings &amp; Midday</li>
+            <li style="color:var(--text-subtle);font-size:0.88rem">Sunday: Closed</li>
+          </ul>
+        </div>
+      </div>
+
     </div>
 
-    <!-- Mobile Menu -->
-    <div class="nav__mobile" id="navMobile">
-      <ul class="nav__mobile-list">
-        <li><a href="#about"        class="nav__mobile-link">About</a></li>
-        <li><a href="#programs"     class="nav__mobile-link">Programs</a></li>
-        <li><a href="#trainers"     class="nav__mobile-link">Trainers</a></li>
-        <li><a href="#pricing"      class="nav__mobile-link">Pricing</a></li>
-        <li><a href="#testimonials" class="nav__mobile-link">Reviews</a></li>
-        <li><a href="#gallery"      class="nav__mobile-link">Gallery</a></li>
-        <li><a href="#contact"      class="nav__mobile-link">Contact</a></li>
-      </ul>
-      <a href="tel:8478774711" class="btn btn--red mobile-call-btn">
-        <i class="fa-solid fa-phone"></i> Call 847-877-4711
-      </a>
-      <div class="nav__mobile-social">
-        <a href="https://www.tiktok.com/@michael.kogan8"       target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-        <a href="https://www.instagram.com/kogan7497/"          target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.facebook.com/mikhail.kogan"        target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://www.youtube.com/@mikhailkogan8136"     target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- ============================================================
-       HERO
-  ============================================================ -->
-  <section class="hero" id="home">
-    <!-- Video background — drop your video file at images/hero.mp4 -->
-    <div class="hero__video-wrap">
-      <video class="hero__video" autoplay muted loop playsinline>
-        <source src="images/hero.mp4" type="video/mp4">
-      </video>
-      <div class="hero__video-overlay"></div>
-    </div>
-
-    <!-- Animated background elements -->
-    <div class="hero__pattern"></div>
-    <div class="hero__glow"></div>
-    <canvas class="hero__particles" id="particleCanvas"></canvas>
-
-    <!-- Red diagonal accent bars -->
-    <div class="hero__bar hero__bar--1"></div>
-    <div class="hero__bar hero__bar--2"></div>
-
-    <div class="container hero__content">
-      <p class="hero__eyebrow">
-        <span class="eyebrow-line"></span>
-        Buffalo Grove, IL &mdash; Chicagoland's Premier Academy Since 1990
-        <span class="eyebrow-line"></span>
-      </p>
-      <h1 class="hero__title">
-        <span class="hero__title-top">FORGE YOUR</span>
-        <span class="hero__title-mid">WARRIOR</span>
-        <span class="hero__title-accent">SPIRIT</span>
-      </h1>
-      <p class="hero__subtitle">
-        Train under world-champion instructors. Master elite combat disciplines.<br>
-        Build the strength, confidence, and discipline to conquer anything.
-      </p>
-      <div class="hero__ctas">
-        <a href="tel:8478774711" class="btn btn--red btn--xl pulse-btn">
-          <i class="fa-solid fa-phone"></i>&nbsp; Call to Enroll
-        </a>
-        <a href="#programs" class="btn btn--outline btn--xl">
-          View Programs &nbsp;<i class="fa-solid fa-chevron-down"></i>
-        </a>
-      </div>
-      <div class="hero__trust">
-        <div class="hero__trust-item"><strong>59</strong> World Champions</div>
-        <div class="hero__trust-divider"></div>
-        <div class="hero__trust-item"><strong>900+</strong> Int'l Medals</div>
-        <div class="hero__trust-divider"></div>
-        <div class="hero__trust-item"><strong>35+</strong> Years of Excellence</div>
-      </div>
-    </div>
-
-    <div class="hero__scroll">
-      <span class="hero__scroll-text">SCROLL</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       STATS BAR
-  ============================================================ -->
-  <div class="stats-bar">
-    <div class="container stats-bar__inner">
-      <div class="stat-item">
-        <div class="stat-num-wrap">
-          <span class="stat-num" data-count="35">0</span><span class="stat-suffix">+</span>
-        </div>
-        <p class="stat-label">Years of Excellence</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-num-wrap">
-          <span class="stat-num" data-count="900">0</span><span class="stat-suffix">+</span>
-        </div>
-        <p class="stat-label">International Medals</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-num-wrap">
-          <span class="stat-num" data-count="59">0</span>
-        </div>
-        <p class="stat-label">World Champions Produced</p>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <div class="stat-num-wrap">
-          <span class="stat-num" data-count="7">0</span>
-        </div>
-        <p class="stat-label">Elite Disciplines</p>
-      </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="currentYear"></span> Kogan Self Defense. All rights reserved.</p>
+      <p>1549 Barclay Blvd, Buffalo Grove, IL 60089 &mdash; <a href="tel:8478774711" style="color:var(--red)">847-877-4711</a></p>
     </div>
   </div>
+</footer>
 
-  <!-- ============================================================
-       ABOUT
-  ============================================================ -->
-  <section class="about" id="about">
-    <div class="container about__grid">
+<!-- Floating Call Button (mobile) -->
+<a href="tel:8478774711" class="fab-call" aria-label="Call Kogan Self Defense">
+  <i class="fa-solid fa-phone"></i>
+</a>
 
-      <div class="about__media reveal">
-        <div class="about__img-wrap">
-          <!-- Replace src with actual gym photo -->
-          <div class="about__img-frame">
-            <img src="images/about.jpg" alt="Master Mikhail Kogan training" class="about__img" onerror="this.parentElement.classList.add('img-missing')">
-            <div class="about__img-placeholder">
-              <i class="fa-solid fa-dumbbell"></i>
-            </div>
-          </div>
-          <div class="about__badge">
-            <span class="badge-est">EST.</span>
-            <span class="badge-year">1990</span>
-          </div>
-          <div class="about__deco-line"></div>
-          <div class="about__deco-box"></div>
-        </div>
-      </div>
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <i class="fa-solid fa-chevron-up"></i>
+</button>
 
-      <div class="about__content reveal">
-        <div class="section-label">OUR STORY</div>
-        <h2 class="section-title">
-          More Than a Gym.<br>
-          <span class="text-red">A Legacy of Champions.</span>
-        </h2>
-        <p class="about__text">
-          Since 1990, Kogan Self Defense has been Chicagoland's most decorated martial arts academy.
-          Founded by Grand Master Mikhail Kogan — a published author, former trainer of Russia's elite
-          <strong>Spetsnaz military unit</strong>, and four-decade veteran of hand-to-hand combat — our
-          academy is where true warriors are forged.
-        </p>
-        <p class="about__text">
-          We are not just a fitness facility. We are <em>an academy of higher learning and standards</em> —
-          a teacher's teacher. Our curriculum encompasses body, mind, and soul, empowering every student
-          to live life fearlessly with honor, character, and purpose.
-        </p>
-        <blockquote class="about__quote">
-          <div class="quote-icon">&ldquo;</div>
-          <p>From Calmness there is Power,<br>From Silence there is Awareness.</p>
-          <cite>&mdash; Grand Master Mikhail Kogan</cite>
-        </blockquote>
-        <div class="about__highlights">
-          <div class="about__highlight">
-            <i class="fa-solid fa-medal"></i>
-            <span>Trained Russia's Elite Spetsnaz Military Unit</span>
-          </div>
-          <div class="about__highlight">
-            <i class="fa-solid fa-book-open"></i>
-            <span>Published Author on Hand-to-Hand Combat</span>
-          </div>
-          <div class="about__highlight">
-            <i class="fa-solid fa-trophy"></i>
-            <span>59 World Champions in the Last 10 Years</span>
-          </div>
-        </div>
-        <a href="#programs" class="btn btn--red">Explore Our Programs</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================
-       PROGRAMS
-  ============================================================ -->
-  <section class="programs" id="programs">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">DISCIPLINES</div>
-        <h2 class="section-title">Choose Your <span class="text-red">Path</span></h2>
-        <p class="section-desc">World-class instruction across seven elite combat disciplines — for students of all ages and skill levels.</p>
-      </div>
-
-      <div class="programs__grid">
-
-        <div class="program-card reveal" style="--delay:0ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#0c1a3e 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-hand-back-fist"></i></div>
-            <h3 class="program-card__name">Hapkido</h3>
-            <p class="program-card__desc">Joint locks, throws, pressure strikes, and fluid redirection — the complete Korean combat system.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-hand-back-fist"></i></div>
-            <h3>Hapkido</h3>
-            <p>Master long- and close-range fighting techniques utilizing jumping kicks, percussive hand strikes, pressure point attacks, joint locks, and throws. A lifetime art for all fitness levels.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:80ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#2a0000 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-person-falling-burst"></i></div>
-            <h3 class="program-card__name">Mixed Martial Arts</h3>
-            <p class="program-card__desc">The complete fighting system — striking, wrestling, grappling, and submissions unified.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 12+ &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-person-falling-burst"></i></div>
-            <h3>Mixed Martial Arts</h3>
-            <p>A seamless blend of striking, clinch work, takedowns, and ground fighting. Train the way champions do — with a complete, no-gaps skill set tested in competition.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:160ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#001a38 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-circle-nodes"></i></div>
-            <h3 class="program-card__name">Brazilian Jiu-Jitsu</h3>
-            <p class="program-card__desc">Ground dominance through leverage — chokes, armbars, and submissions that level the playing field.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-circle-nodes"></i></div>
-            <h3>Brazilian Jiu-Jitsu</h3>
-            <p>The gentle art that enables a smaller person to defeat a larger attacker. Learn to control the ground, escape bad positions, and finish with precision submissions.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:240ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#1a0028 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-            <h3 class="program-card__name">Muay Thai</h3>
-            <p class="program-card__desc">The art of eight limbs — fists, elbows, knees, and shins delivering devastating striking power.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 12+ &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
-            <h3>Muay Thai</h3>
-            <p>Thailand's national sport and the world's most powerful stand-up striking system. Learn stand-up striking, devastating clinch attacks, and the conditioning of a Nak Muay champion.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:320ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#001a08 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3 class="program-card__name">Krav Maga</h3>
-            <p class="program-card__desc">No-nonsense real-world self-defense developed for Israel's military. Practical. Brutal. Effective.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> Adults &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <h3>Krav Maga</h3>
-            <p>Designed to teach civilians to neutralize real threats fast. No forms, no rituals — just instinctive techniques proven in the most hostile environments on earth.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:400ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#1a0f00 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-bolt"></i></div>
-            <h3 class="program-card__name">Kyokushin Karate</h3>
-            <p class="program-card__desc">Full-contact karate forged for maximum toughness — conditioning, power, and iron spirit.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 6+ &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-bolt"></i></div>
-            <h3>Kyokushin Karate</h3>
-            <p>The "strongest karate" — full-contact, no-padding sparring that forges elite physical and mental toughness. Trained under instructors with 5th degree black belts including guest masters from Mongolia.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card reveal" style="--delay:480ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#001818 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon"><i class="fa-solid fa-star"></i></div>
-            <h3 class="program-card__name">Shotokan Karate</h3>
-            <p class="program-card__desc">Precision. Kata. Kumite. The traditional Japanese art refined by World Champions.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> All Ages &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-star"></i></div>
-            <h3>Shotokan Karate</h3>
-            <p>Train in the classical Japanese karate system with a two-time World Champion and four-time European Champion as your coach. Technical excellence meets competitive fire.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Start This Class</a>
-          </div>
-        </div>
-
-        <div class="program-card program-card--gold reveal" style="--delay:560ms">
-          <div class="program-card__bg" style="background:linear-gradient(160deg,#1a1000 0%,#0a0a0a 70%)"></div>
-          <div class="program-card__front">
-            <div class="program-card__icon program-card__icon--gold"><i class="fa-solid fa-child-reaching"></i></div>
-            <h3 class="program-card__name">Kids' Program</h3>
-            <p class="program-card__desc">Age-appropriate training in Hapkido, MMA &amp; BJJ — building confidence, discipline, and leadership.</p>
-            <div class="program-card__tag"><i class="fa-solid fa-users"></i> Ages 5–15 &bull; All Levels</div>
-          </div>
-          <div class="program-card__hover program-card__hover--gold">
-            <div class="program-card__hover-icon"><i class="fa-solid fa-child-reaching"></i></div>
-            <h3>Kids' Program</h3>
-            <p>Our kids' curriculum builds more than fighting skills — it builds character, focus, and lifelong confidence. Structured, fun, and safe training in Hapkido, MMA, and BJJ for ages 5–15.</p>
-            <a href="tel:8478774711" class="btn btn--white btn--sm">Enroll Your Child</a>
-          </div>
-        </div>
-
-      </div><!-- /programs__grid -->
-    </div>
-  </section>
-
-  <!-- ============================================================
-       TRAINERS
-  ============================================================ -->
-  <section class="trainers" id="trainers">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">INSTRUCTORS</div>
-        <h2 class="section-title">Train With <span class="text-red">World Champions</span></h2>
-        <p class="section-desc">Our instructors are not just teachers — they are decorated competitors and lifelong masters of their craft.</p>
-      </div>
-
-      <!-- Featured Trainer: Founder -->
-      <div class="trainer-featured reveal">
-        <div class="trainer-featured__photo">
-          <div class="trainer-photo" style="--initials:'MK'">
-            <img src="images/trainer-kogan.jpg" alt="Mikhail Kogan">
-          </div>
-          <div class="trainer-featured__badge">FOUNDER &amp; GRAND MASTER</div>
-        </div>
-        <div class="trainer-featured__info">
-          <h3 class="trainer-name">Mikhail Kogan</h3>
-          <p class="trainer-title text-red">Founder | Grand Master | Published Author</p>
-          <p class="trainer-bio">
-            With over 40 years of studying, practicing, and teaching hand-to-hand combat and martial arts,
-            Grand Master Mikhail Kogan is among the most credentialed martial artists in North America.
-            He personally trained Russia's elite <strong>Spetsnaz special forces</strong>, authored a
-            published work on hand-to-hand combat methodology, and founded the
-            <strong>Spetsnaz USA DART system</strong> — now practiced by thousands worldwide.
-            He speaks English and Russian and brings the full depth of his four decades of mastery to every class.
-          </p>
-          <div class="trainer-ranks">
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master — Hapkido &amp; GHA State Director</div>
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master — WUCAA Combat Free Fight</div>
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Grand Master &amp; Founder — Spetsnaz USA DART</div>
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> 6th Degree Black Belt — Combat Kung Fu &amp; Crushalo</div>
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Black Belt — Judo &nbsp;|&nbsp; U.S.S.R. Master of Sport — Combat Sambo</div>
-            <div class="rank-item"><i class="fa-solid fa-circle-check"></i> Master Instructor — Crushalo &amp; Karate-do &nbsp;|&nbsp; Certified Kickboxing Trainer</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Other Trainers -->
-      <div class="trainers-grid">
-
-        <div class="trainer-card reveal" style="--delay:0ms">
-          <div class="trainer-photo" style="--initials:'SY'">
-            <img src="images/trainer-yarkulov.jpg" alt="Shukhrat Yarkulov">
-          </div>
-          <div class="trainer-card__info">
-            <h3 class="trainer-name">Shukhrat Yarkulov</h3>
-            <p class="trainer-title text-red">Muay Thai &amp; Boxing Master</p>
-            <p class="trainer-bio">President of the Uzbekistan National Federation in Muay Thai and a Master of Sport in Boxing with numerous national and international medals. Coach Yarkulov's students have ascended to become World Champions in Muay Thai, Kickboxing, MMA, and the UFC.</p>
-            <div class="trainer-tags">
-              <span class="trainer-tag">Muay Thai</span>
-              <span class="trainer-tag">Boxing</span>
-              <span class="trainer-tag">MMA</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="trainer-card reveal" style="--delay:120ms">
-          <div class="trainer-photo" style="--initials:'AK'">
-            <img src="images/trainer-karomatov.jpg" alt="Avazhon Karomatov">
-          </div>
-          <div class="trainer-card__info">
-            <h3 class="trainer-name">Avazhon Karomatov</h3>
-            <p class="trainer-title text-red">World Champion — Muay Thai</p>
-            <p class="trainer-bio">A decorated World Champion in Muay Thai with multiple national and international medals in Kickboxing and Muay Thai. Several of Coach Karomatov's students have gone on to become World Champions in Muay Thai, Kickboxing, and the UFC — a true testament to elite-level coaching.</p>
-            <div class="trainer-tags">
-              <span class="trainer-tag">Muay Thai</span>
-              <span class="trainer-tag">Kickboxing</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="trainer-card reveal" style="--delay:240ms">
-          <div class="trainer-photo" style="--initials:'JA'">
-            <img src="images/trainer-adian.jpg" alt="Jey Adian">
-          </div>
-          <div class="trainer-card__info">
-            <h3 class="trainer-name">Jey Adian</h3>
-            <p class="trainer-title text-red">2x World Champion — Shotokan &amp; Kickboxing</p>
-            <p class="trainer-bio">Two-time World Champion in Shotokan Karate, World Champion in Kickboxing (WAKO), and four-time European Champion. Coach Adian brings an obsessive passion for technical precision and a burning desire to see every student qualify for World Championships.</p>
-            <div class="trainer-tags">
-              <span class="trainer-tag">Shotokan</span>
-              <span class="trainer-tag">Kickboxing</span>
-              <span class="trainer-tag">Kata</span>
-            </div>
-          </div>
-        </div>
-
-      </div><!-- /trainers-grid -->
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CHAMPIONS BANNER
-  ============================================================ -->
-  <div class="champions-banner">
-    <div class="champ-banner__bg-pattern"></div>
-    <div class="container champ-banner__inner reveal">
-      <div class="champ-banner__left">
-        <div class="champ-num">59</div>
-        <div class="champ-label">World Champions<br><span>In The Last 10 Years</span></div>
-      </div>
-      <div class="champ-banner__divider"></div>
-      <div class="champ-banner__right">
-        <p class="champ-desc">Our students have earned gold on the world stage in:</p>
-        <div class="champ-arts">
-          <span>Hapkido</span><span>Brazilian Jiu-Jitsu</span><span>Combat Sambo</span>
-          <span>Karate</span><span>Kung-Fu</span><span>Kickboxing</span>
-        </div>
-        <a href="tel:8478774711" class="btn btn--outline-white">Join the Legacy</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       PRICING
-  ============================================================ -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">INVESTMENT</div>
-        <h2 class="section-title">Simple, <span class="text-red">Honest Pricing</span></h2>
-        <p class="section-desc">No hidden fees. No long-term contracts required. Just elite training at a fair price.</p>
-      </div>
-
-      <div class="pricing__grid">
-
-        <div class="price-card reveal">
-          <div class="price-card__header">
-            <div class="price-card__icon"><i class="fa-solid fa-ticket"></i></div>
-            <h3 class="price-card__name">Drop-In Session</h3>
-            <p class="price-card__tagline">Train on your schedule</p>
-          </div>
-          <div class="price-card__amount">
-            <span class="price-dollar">$</span>
-            <span class="price-num">25</span>
-            <span class="price-per">per lesson</span>
-          </div>
-          <ul class="price-card__features">
-            <li><i class="fa-solid fa-check"></i> Access to any single class</li>
-            <li><i class="fa-solid fa-check"></i> All disciplines available</li>
-            <li><i class="fa-solid fa-check"></i> All skill levels welcome</li>
-            <li><i class="fa-solid fa-check"></i> No long-term commitment</li>
-            <li class="unavail"><i class="fa-solid fa-xmark"></i> Unlimited attendance</li>
-          </ul>
-          <a href="tel:8478774711" class="btn btn--outline-red btn--full">Call to Book a Session</a>
-        </div>
-
-        <div class="price-card price-card--featured reveal" style="--delay:150ms">
-          <div class="price-card__badge">BEST VALUE</div>
-          <div class="price-card__header">
-            <div class="price-card__icon"><i class="fa-solid fa-infinity"></i></div>
-            <h3 class="price-card__name">Monthly Unlimited</h3>
-            <p class="price-card__tagline">Train every single day</p>
-          </div>
-          <div class="price-card__amount">
-            <span class="price-dollar">$</span>
-            <span class="price-num">150</span>
-            <span class="price-per">per month</span>
-          </div>
-          <ul class="price-card__features">
-            <li><i class="fa-solid fa-check"></i> Unlimited daily classes</li>
-            <li><i class="fa-solid fa-check"></i> All 7 disciplines included</li>
-            <li><i class="fa-solid fa-check"></i> Kids &amp; adult programs</li>
-            <li><i class="fa-solid fa-check"></i> Open mat access</li>
-            <li><i class="fa-solid fa-check"></i> Competition training</li>
-          </ul>
-          <a href="tel:8478774711" class="btn btn--red btn--full pulse-btn">Call to Enroll Today</a>
-          <p class="price-card__note">Only $5/day for unlimited training</p>
-        </div>
-
-      </div><!-- /pricing__grid -->
-
-      <div class="pricing__cta reveal">
-        <i class="fa-solid fa-phone-volume"></i>
-        <span>Questions about programs? Call us: <a href="tel:8478774711">847-877-4711</a></span>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       TESTIMONIALS
-  ============================================================ -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">REVIEWS</div>
-        <h2 class="section-title">What Our <span class="text-red">Warriors Say</span></h2>
-      </div>
-
-      <div class="testi-track-wrap">
-        <div class="testi-track" id="testiTrack">
-
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <div class="testi-quote">&ldquo;</div>
-            <p class="testi-text">I was skeptical at first, but Master Kogan's methods are unlike anything I've ever experienced. Within three months I felt truly confident for the first time in my life. This place didn't just teach me to defend myself — it changed who I am.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">S</div>
-              <div>
-                <strong>Sarah M.</strong>
-                <span>Buffalo Grove, IL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <div class="testi-quote">&ldquo;</div>
-            <p class="testi-text">My son enrolled in the kids' program at age 8. He's now 12, competing at tournaments and leading in school. This gym didn't just teach him to fight — it taught him to lead. The instructors genuinely care about every kid here.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">D</div>
-              <div>
-                <strong>David K.</strong>
-                <span>Arlington Heights, IL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <div class="testi-quote">&ldquo;</div>
-            <p class="testi-text">As a woman training alone, I wanted practical self-defense I could actually use. The Krav Maga class gave me exactly that. The instructors are world champions who break everything down to real-world application. I feel genuinely empowered.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">J</div>
-              <div>
-                <strong>Jessica T.</strong>
-                <span>Lincolnshire, IL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <div class="testi-quote">&ldquo;</div>
-            <p class="testi-text">I've trained at six different gyms across the Chicago area. Kogan Self Defense is in a completely different league. The trainers are actual world champions — not just certified instructors. The depth of knowledge here is unreal. Best gym in Illinois.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">M</div>
-              <div>
-                <strong>Mike R.</strong>
-                <span>Vernon Hills, IL</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="testi-card">
-            <div class="testi-stars">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <div class="testi-quote">&ldquo;</div>
-            <p class="testi-text">After my kids joined, I started adult classes and I'm completely hooked. The $150/month unlimited is the best deal in fitness, period. The community here is incredible — supportive, motivating, and genuinely like a second family. Mikhail is a true Grand Master.</p>
-            <div class="testi-author">
-              <div class="testi-avatar">A</div>
-              <div>
-                <strong>Amanda P.</strong>
-                <span>Deerfield, IL</span>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- /testi-track -->
-      </div><!-- /testi-track-wrap -->
-
-      <div class="testi-controls">
-        <button class="testi-btn" id="testiPrev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
-        <div class="testi-dots" id="testiDots"></div>
-        <button class="testi-btn" id="testiNext" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       GALLERY
-  ============================================================ -->
-  <section class="gallery" id="gallery">
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">GALLERY</div>
-        <h2 class="section-title">Inside the <span class="text-red">Academy</span></h2>
-        <p class="section-desc">A glimpse into our world-class training environment and champion-producing culture.</p>
-      </div>
-
-      <div class="gallery__grid">
-        <!-- Replace these with real images at images/gallery-01.jpg etc. -->
-        <div class="gallery-item gallery-item--wide reveal" style="--delay:0ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0000,#2a0505)">
-            <img src="images/gallery-01.jpg" alt="Training session" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-dumbbell"></i><span>Training</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:80ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#0a1520,#0d1a2a)">
-            <img src="images/gallery-02.jpg" alt="Competition" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-trophy"></i><span>Competition</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:160ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#0a1a00,#0d2006)">
-            <img src="images/gallery-03.jpg" alt="Kids class" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-child-reaching"></i><span>Kids Class</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:240ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0a00,#2a1000)">
-            <img src="images/gallery-04.jpg" alt="Muay Thai training" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-fire-flame-curved"></i><span>Muay Thai</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item gallery-item--tall reveal" style="--delay:320ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a0020,#20002a)">
-            <img src="images/gallery-05.jpg" alt="BJJ rolling" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-circle-nodes"></i><span>BJJ</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:400ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#1a1000,#20160a)">
-            <img src="images/gallery-06.jpg" alt="Hapkido demonstration" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-hand-back-fist"></i><span>Hapkido</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item gallery-item--wide reveal" style="--delay:480ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#001818,#001a20)">
-            <img src="images/gallery-07.jpg" alt="Championship medals" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-medal"></i><span>Champions</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:560ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#18001a,#200025)">
-            <img src="images/gallery-08.jpg" alt="Krav Maga class" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-shield-halved"></i><span>Krav Maga</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-        <div class="gallery-item reveal" style="--delay:640ms">
-          <div class="gallery-item__inner" style="background:linear-gradient(135deg,#001208,#001a0c)">
-            <img src="images/gallery-09.jpg" alt="Team photo" loading="lazy">
-            <div class="gallery-placeholder"><i class="fa-solid fa-people-group"></i><span>Our Team</span></div>
-            <div class="gallery-item__overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="gallery__social reveal">
-        <p>Follow us for daily training content</p>
-        <div class="social-links">
-          <a href="https://www.tiktok.com/@michael.kogan8"      target="_blank" rel="noopener" class="social-link social-link--tiktok">
-            <i class="fa-brands fa-tiktok"></i><span>@michael.kogan8</span>
-          </a>
-          <a href="https://www.instagram.com/kogan7497/"         target="_blank" rel="noopener" class="social-link social-link--instagram">
-            <i class="fa-brands fa-instagram"></i><span>@kogan7497</span>
-          </a>
-          <a href="https://www.youtube.com/@mikhailkogan8136"    target="_blank" rel="noopener" class="social-link social-link--youtube">
-            <i class="fa-brands fa-youtube"></i><span>@mikhailkogan8136</span>
-          </a>
-          <a href="https://www.facebook.com/mikhail.kogan"       target="_blank" rel="noopener" class="social-link social-link--facebook">
-            <i class="fa-brands fa-facebook-f"></i><span>Mikhail Kogan</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Gallery Lightbox -->
-    <div class="lightbox" id="lightbox">
-      <button class="lightbox__close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
-      <img class="lightbox__img" id="lightboxImg" src="" alt="">
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SCHEDULE
-  ============================================================ -->
-  <section class="schedule" id="schedule">
-    <div class="schedule__bg-pattern"></div>
-    <div class="container">
-      <div class="section-header reveal">
-        <div class="section-label">SCHEDULE</div>
-        <h2 class="section-title">Train <span class="text-white">Every Day</span></h2>
-        <p class="section-desc" style="color:rgba(255,255,255,0.7)">Classes run morning, afternoon, and evening — 6 days a week.</p>
-      </div>
-
-      <div class="schedule__grid reveal">
-        <div class="schedule-day">
-          <div class="day-name">MON</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Afternoon</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Muay Thai</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">BJJ / Hapkido</span>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-name">TUE</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Afternoon</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Krav Maga</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Open Mat</span>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-name">WED</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Afternoon</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Hapkido</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">MMA</span>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-name">THU</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Afternoon</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Combat Sambo</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Karate</span>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-day">
-          <div class="day-name">FRI</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Afternoon</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">Muay Thai</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Evening</span>
-              <span class="class-name">BJJ</span>
-            </div>
-          </div>
-        </div>
-        <div class="schedule-day schedule-day--highlight">
-          <div class="day-name">SAT</div>
-          <div class="day-classes">
-            <div class="day-class">
-              <span class="class-time">Morning</span>
-              <span class="class-name">Kids' Programs</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Morning</span>
-              <span class="class-name">Adult Mixed</span>
-            </div>
-            <div class="day-class">
-              <span class="class-time">Midday</span>
-              <span class="class-name">Competition Prep</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="schedule__note reveal">
-        <i class="fa-solid fa-circle-info"></i>
-        <span>Contact us for exact class times and availability. Schedule may vary by season.</span>
-        <a href="tel:8478774711" class="btn btn--outline-white btn--sm">Call for Current Schedule</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CONTACT
-  ============================================================ -->
-  <section class="contact" id="contact">
-    <div class="container contact__grid">
-
-      <div class="contact__info reveal">
-        <div class="section-label">GET IN TOUCH</div>
-        <h2 class="section-title">Start Your <span class="text-red">Journey Today</span></h2>
-        <p class="contact__intro">Ready to transform your life? Call us, stop by, or follow us on social media. We welcome students of all ages and experience levels.</p>
-
-        <div class="contact__details">
-          <a href="tel:8478774711" class="contact-item contact-item--link">
-            <div class="contact-item__icon"><i class="fa-solid fa-phone-volume"></i></div>
-            <div>
-              <strong>Call Us</strong>
-              <span>847-877-4711</span>
-            </div>
-          </a>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa-solid fa-location-dot"></i></div>
-            <div>
-              <strong>Location</strong>
-              <span>1549 Barclay Blvd, Buffalo Grove, IL 60089</span>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="contact-item__icon"><i class="fa-solid fa-clock"></i></div>
-            <div>
-              <strong>Hours</strong>
-              <span>Mon–Fri: Afternoon &amp; Evening<br>Saturday: Morning &amp; Midday</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact__social">
-          <p class="contact__social-label">Follow &amp; Train With Us</p>
-          <div class="contact-socials">
-            <a href="https://www.tiktok.com/@michael.kogan8"   target="_blank" rel="noopener" class="csocial csocial--tiktok" aria-label="TikTok">
-              <i class="fa-brands fa-tiktok"></i>
-            </a>
-            <a href="https://www.instagram.com/kogan7497/"      target="_blank" rel="noopener" class="csocial csocial--instagram" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" class="csocial csocial--youtube" aria-label="YouTube">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a href="https://www.facebook.com/mikhail.kogan"    target="_blank" rel="noopener" class="csocial csocial--facebook" aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="contact__map reveal">
-        <div class="map-wrap">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2960.6591!2d-87.9614!3d42.1731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fb9e43b6f2b2b%3A0x4e2e2e2e2e2e2e2e!2s1549%20Barclay%20Blvd%2C%20Buffalo%20Grove%2C%20IL%2060089!5e0!3m2!1sen!2sus!4v1620000000000"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Kogan Self Defense Location">
-          </iframe>
-        </div>
-        <a href="https://maps.google.com/?q=1549+Barclay+Blvd+Buffalo+Grove+IL+60089" target="_blank" rel="noopener" class="btn btn--red map-directions-btn">
-          <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer class="footer">
-    <div class="footer__top-line"></div>
-    <div class="container">
-      <div class="footer__grid">
-
-        <div class="footer__brand">
-          <svg class="footer__logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="100" cy="100" r="97" fill="#0a0a0a"/>
-            <circle cx="100" cy="100" r="95" fill="none" stroke="#CC0000" stroke-width="4"/>
-            <circle cx="100" cy="100" r="88" fill="none" stroke="#CC0000" stroke-width="1" opacity="0.5"/>
-            <text x="100" y="52" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="19" font-weight="900" fill="white" letter-spacing="1">SPETSNAZ</text>
-            <text x="100" y="83" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" letter-spacing="3">USA</text>
-            <polygon points="86,88 100,140 114,88 109,92 100,130 91,92" fill="#CC0000"/>
-            <polygon points="22,80 78,70 82,85 26,95" fill="#CC0000"/>
-            <polygon points="22,80 55,68 58,80 26,90" fill="#CC0000" opacity="0.75"/>
-            <polygon points="178,80 122,70 118,85 174,95" fill="#CC0000"/>
-            <polygon points="178,80 145,68 142,80 174,90" fill="#CC0000" opacity="0.75"/>
-            <text x="100" y="170" text-anchor="middle" font-family="Arial Black,sans-serif" font-size="17" font-weight="900" fill="white" letter-spacing="1">CRUSHALO</text>
-          </svg>
-          <div class="footer__brand-text">
-            <span class="footer-brand-main">KOGAN SELF DEFENSE</span>
-            <span class="footer-brand-sub">Forging Warriors Since 1990</span>
-          </div>
-          <p class="footer__tagline">"From Calmness there is Power,<br>From Silence there is Awareness."</p>
-          <div class="footer-socials">
-            <a href="https://www.tiktok.com/@michael.kogan8"   target="_blank" rel="noopener" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/kogan7497/"      target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@mikhailkogan8136" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-            <a href="https://www.facebook.com/mikhail.kogan"    target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          </div>
-        </div>
-
-        <div class="footer__col">
-          <h4 class="footer__col-title">Navigation</h4>
-          <ul class="footer__links">
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#trainers">Trainers</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Reviews</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col">
-          <h4 class="footer__col-title">Disciplines</h4>
-          <ul class="footer__links">
-            <li><a href="#programs">Hapkido</a></li>
-            <li><a href="#programs">Mixed Martial Arts</a></li>
-            <li><a href="#programs">Brazilian Jiu-Jitsu</a></li>
-            <li><a href="#programs">Muay Thai</a></li>
-            <li><a href="#programs">Krav Maga</a></li>
-            <li><a href="#programs">Kyokushin Karate</a></li>
-            <li><a href="#programs">Shotokan Karate</a></li>
-            <li><a href="#programs">Kids' Program</a></li>
-          </ul>
-        </div>
-
-        <div class="footer__col">
-          <h4 class="footer__col-title">Contact</h4>
-          <ul class="footer__contact-list">
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <a href="tel:8478774711">847-877-4711</a>
-            </li>
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <span>1549 Barclay Blvd<br>Buffalo Grove, IL 60089</span>
-            </li>
-            <li>
-              <i class="fa-solid fa-globe"></i>
-              <a href="https://koganselfdefense.com" target="_blank" rel="noopener">koganselfdefense.com</a>
-            </li>
-          </ul>
-        </div>
-
-      </div><!-- /footer__grid -->
-
-      <div class="footer__bottom">
-        <p>&copy; <span id="currentYear"></span> Kogan Self Defense. All rights reserved.</p>
-        <p>1549 Barclay Blvd, Buffalo Grove, IL 60089</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Floating Call Button (mobile) -->
-  <a href="tel:8478774711" class="fab-call" aria-label="Call Kogan Self Defense">
-    <i class="fa-solid fa-phone"></i>
-  </a>
-
-  <!-- Back to Top -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fa-solid fa-chevron-up"></i>
-  </button>
-
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
