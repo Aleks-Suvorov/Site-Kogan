@@ -92,8 +92,21 @@ h1, h2, h3, h4, h5 {
   color: var(--red);
   text-transform: uppercase;
   margin-bottom: 10px;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+/* Section heads center the eyebrow, so hide the left line there */
+.section-head .eyebrow { justify-content: center; }
+.section-head .eyebrow::before { display: none; }
 
 .section-head {
   text-align: center;
@@ -452,7 +465,20 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 18px;
 }
 .hero__h1 span    { display: block; color: rgba(255,255,255,0.9); }
-.hero__h1 em      { display: block; color: var(--red); font-style: normal; }
+.hero__h1 em {
+  display: block;
+  font-style: normal;
+  background: linear-gradient(90deg, #CC0000, #ff4444, #CC0000);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer-text 5s linear infinite;
+}
+@keyframes shimmer-text {
+  0%   { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
 .hero__h1 .h1-sub {
   font-size: 0.58em;
   color: rgba(255,255,255,0.65);
