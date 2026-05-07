@@ -412,7 +412,7 @@ h1, h2, h3, h4, h5 {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 24px 120px;
   padding-top: var(--nav-h);
 }
 
@@ -492,7 +492,8 @@ h1, h2, h3, h4, h5 {
   bottom: -1px;
   left: 0; right: 0;
   height: 100px;
-  background: var(--black);
+  /* matches strip color so the diagonal bleeds seamlessly into the red strip */
+  background: #7a0000;
   clip-path: polygon(0 100%, 100% 100%, 100% 30%, 0 100%);
   z-index: 5;
 }
@@ -505,6 +506,15 @@ h1, h2, h3, h4, h5 {
   padding: 60px 24px;
   position: relative;
   z-index: 2;
+}
+
+.strip::after {
+  content: '';
+  display: block;
+  height: 64px;
+  background: var(--black);
+  clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 100%);
+  margin-top: 40px;
 }
 
 .strip__inner {
@@ -583,6 +593,10 @@ h1, h2, h3, h4, h5 {
 /* ========================================================
    5. ABOUT
 ======================================================== */
+.about-wrap {
+  background: var(--black);
+}
+
 .about {
   padding: 100px 24px;
   max-width: 1240px;
@@ -752,6 +766,13 @@ h1, h2, h3, h4, h5 {
 .prog-card:hover .prog-card__cta { opacity: 1; transform: none; }
 .gold-cta  { color: var(--gold); }
 .gold-icon { color: var(--gold); }
+
+/* Mobile tap reveal */
+.prog-card.tapped .prog-card__cta { opacity: 1; transform: none; }
+
+/* Remove orphan borders on last items */
+.prog-card:last-child      { border-right: none; }
+.prog-card:nth-last-child(-n+2) { border-bottom: none; }
 
 .programs__note {
   text-align: center;
@@ -1631,7 +1652,8 @@ h1, h2, h3, h4, h5 {
     gap: 40px;
     padding: 72px 24px;
   }
-  .about__img-col { max-width: 460px; }
+  .about__img-col { max-width: 460px; overflow: visible; }
+  .about__img-badge { right: 16px; bottom: -16px; }
 
   .founder-card {
     grid-template-columns: 1fr;
