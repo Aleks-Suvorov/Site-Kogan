@@ -521,15 +521,6 @@ h1, h2, h3, h4, h5 {
   z-index: 2;
 }
 
-.strip::after {
-  content: '';
-  display: block;
-  height: 64px;
-  background: var(--black);
-  clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 100%);
-  margin-top: 40px;
-}
-
 .strip__inner {
   max-width: 1240px;
   margin: 0 auto;
@@ -676,7 +667,9 @@ h1, h2, h3, h4, h5 {
   background: var(--card);
   border-radius: var(--r-sm);
   border: 1px solid var(--border);
+  transition: border-color 0.2s, background 0.2s;
 }
+.pillar:hover { background: var(--card-2); border-color: rgba(204,0,0,0.18); }
 .pillar i { color: var(--red); font-size: 1rem; margin-top: 2px; flex-shrink: 0; }
 .pillar strong {
   display: block;
@@ -1405,6 +1398,16 @@ h1, h2, h3, h4, h5 {
 }
 .cta-phone-block:hover { border-color: var(--red); background: #150000; }
 
+@keyframes phone-shake {
+  0%, 100% { transform: rotate(0deg); }
+  15%       { transform: rotate(-12deg); }
+  30%       { transform: rotate(12deg); }
+  45%       { transform: rotate(-8deg); }
+  60%       { transform: rotate(8deg); }
+  75%       { transform: rotate(-4deg); }
+  90%       { transform: rotate(4deg); }
+}
+
 .cta-phone-icon {
   width: 48px;
   height: 48px;
@@ -1416,9 +1419,9 @@ h1, h2, h3, h4, h5 {
   font-size: 1.1rem;
   color: var(--white);
   flex-shrink: 0;
-  animation: pulse-ring 2.4s ease infinite;
+  animation: pulse-ring 2.4s ease infinite, phone-shake 4s ease-in-out 2s infinite;
 }
-.cta-phone-block:hover .cta-phone-icon { animation: none; }
+.cta-phone-block:hover .cta-phone-icon { animation: none; transform: scale(1.08); }
 
 .cta-phone-block > div span {
   display: block;
@@ -1693,8 +1696,8 @@ h1, h2, h3, h4, h5 {
     gap: 40px;
     padding: 72px 24px;
   }
-  .about__img-col { max-width: 460px; overflow: visible; }
-  .about__img-badge { right: 16px; bottom: -16px; }
+  .about__img-col { max-width: 460px; padding-bottom: 32px; }
+  .about__img-badge { right: 12px; bottom: 6px; }
 
   .founder-card {
     grid-template-columns: 1fr;
