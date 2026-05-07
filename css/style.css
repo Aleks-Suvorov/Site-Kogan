@@ -317,6 +317,7 @@ h1, h2, h3, h4, h5 {
   transition: background 0.2s;
 }
 .nav__call:hover { background: var(--red-dark); }
+.nav__call:hover i { animation: phone-shake 0.6s ease; }
 
 .nav__burger {
   width: 36px;
@@ -1653,7 +1654,9 @@ h1, h2, h3, h4, h5 {
 .footer-social a:hover { color: var(--white); border-color: var(--red); background: var(--red-glow); }
 
 .footer-bottom {
-  border-top: 1px solid var(--border);
+  border-top: 1px solid transparent;
+  background: linear-gradient(#050505, #050505) padding-box,
+              linear-gradient(90deg, transparent, rgba(204,0,0,0.3), transparent) border-box;
   padding: 20px 24px;
   display: flex;
   align-items: center;
