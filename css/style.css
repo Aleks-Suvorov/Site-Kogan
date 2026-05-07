@@ -35,6 +35,19 @@
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+::selection { background: rgba(204,0,0,0.35); color: #fff; }
+
+::-webkit-scrollbar              { width: 6px; }
+::-webkit-scrollbar-track        { background: var(--black); }
+::-webkit-scrollbar-thumb        { background: #2a2a2a; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover  { background: var(--red-dark); }
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 html { scroll-behavior: smooth; scroll-padding-top: var(--nav-h); }
 
 body {
@@ -909,9 +922,13 @@ h1, h2, h3, h4, h5 {
   border: 1px solid var(--border);
   border-radius: var(--r-md);
   padding: 28px 22px;
-  transition: border-color 0.22s, transform 0.22s;
+  transition: border-color 0.22s, transform 0.22s, box-shadow 0.22s;
 }
-.team-card:hover { border-color: rgba(204,0,0,0.22); transform: translateY(-4px); }
+.team-card:hover {
+  border-color: rgba(204,0,0,0.22);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.3), 0 0 0 1px rgba(204,0,0,0.08);
+}
 
 .team-card .trainer-avatar {
   width: 80px;
@@ -1051,8 +1068,9 @@ h1, h2, h3, h4, h5 {
 .price-card--hero {
   border-color: var(--red);
   background: linear-gradient(160deg, #1c0000 0%, var(--card) 100%);
+  box-shadow: 0 0 0 1px var(--red), 0 20px 60px rgba(204,0,0,0.15);
 }
-.price-card--hero:hover { border-color: var(--red); }
+.price-card--hero:hover { border-color: var(--red); box-shadow: 0 0 0 1px var(--red), 0 28px 80px rgba(204,0,0,0.22); }
 
 .price-card__badge {
   position: absolute;
