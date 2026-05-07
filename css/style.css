@@ -1281,8 +1281,10 @@ h1, h2, h3, h4, h5 {
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 220px;
-  gap: 3px;
+  grid-auto-rows: 230px;
+  gap: 4px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
 .gi { position: relative; overflow: hidden; cursor: pointer; }
@@ -1304,12 +1306,24 @@ h1, h2, h3, h4, h5 {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255,255,255,0.85);
-  font-size: 1.3rem;
   opacity: 0;
-  transition: opacity 0.25s;
-  background: rgba(0,0,0,0.28);
+  transition: opacity 0.3s;
+  background: linear-gradient(135deg, rgba(120,0,0,0.35), rgba(0,0,0,0.5));
 }
+.gi__over i {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.5);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: 0.95rem;
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s, border-color 0.2s;
+}
+.gi:hover .gi__over i { transform: scale(1.1); border-color: rgba(255,255,255,0.9); }
 .gi:hover .gi__over { opacity: 1; }
 
 .gallery-social { text-align: center; padding: 48px 24px 0; }
